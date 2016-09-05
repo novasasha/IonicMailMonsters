@@ -1,0 +1,9 @@
+<ion-view view-title="Emails">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="email in emails" href="#/app/emails/{{email.id}}">
+        {{email.sender}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

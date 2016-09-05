@@ -41,16 +41,19 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
+.controller('EmailsCtrl', function($scope) {
+  $scope.emails = [
+    { sender: 'Naomi David', id: 1 },
+    { sender: 'Dev Bootcamp', id: 2 },
+    { sender: 'Naomi David', id: 3 },
+    { sender: 'Naomi David', id: 4 },
+    { sender: 'John Doe', id: 5 },
+    { sender: 'Dev Bootcamp', id: 6 }
   ];
 })
 
-.controller('PlaylistCtrl', function($scope, $stateParams) {
+.controller('EmailCtrl', function($scope) {
+  $scope.email = [
+    { sender: 'Naomi David', id: 1 }
+  ];
 });
