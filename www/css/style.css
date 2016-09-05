@@ -27,3 +27,22 @@
 .blue {
   color: #1681FA;
 }
+
+/* Character Section */
+.monster-section {
+  height: 40vh;
+  background-image: url(../img/sakura.png);
+  width: 100%;
+  background-size: cover;
+  background-repeat: none;
+  background-position: 0 0;
+}
+
+#monster {
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+  position: fixed;
+  top: 15%;
+  left: 35%;
+}
