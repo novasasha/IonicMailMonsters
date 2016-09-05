@@ -1,4 +1,4 @@
-<ion-view view-title="Playlists">
+<ion-view view-title="Emails">
   <ion-nav-buttons side="secondary">
     <button class="icon ion-ios-search" ng-click="doSomething()">
     </button>
@@ -12,12 +12,15 @@
       <div class="monster-container">
         <img id="monster" src="../img/dragon-flying.gif" />
       </div>
-
-
     </div>
     <ion-list>
-      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
-        {{playlist.title}}
+      <ion-item ng-repeat="email in emails" href="#/app/emails/{{email.id}}">
+        <ion-checkbox ng-model="filter.red" class="checkbox-positive">Red</ion-checkbox>
+        <div class="single-email-preview">
+          <h2>{{email.sender}}</h2>
+          <p>{{email.title}}</p>
+          <p>{{email.body}}</p>
+        </div>
       </ion-item>
     </ion-list>
   </ion-content>
