@@ -1,5 +1,18 @@
 <ion-view view-title="Emails">
+  <ion-nav-buttons side="secondary">
+    <button class="icon ion-ios-search" ng-click="doSomething()">
+    </button>
+    <button class="icon ion-ios-arrow-down" ng-click="doSomething()">
+    </button>
+        <button class="icon ion-ios-compose-outline" ng-click="doSomething()">
+        </button>
+  </ion-nav-buttons>
   <ion-content>
+    <div class="monster-section">
+      <div class="monster-container">
+        <img id="monster" src="../img/dragon-flying.gif" />
+      </div>
+    </div>
     <ion-list>
       <ion-item ng-repeat="email in emails" href="#/app/emails/{{email.id}}">
         <!-- <ion-checkbox ng-model="filter.red" class="checkbox-positive"> -->
@@ -13,11 +26,3 @@
     </ion-list>
   </ion-content>
 </ion-view>
-
-<!-- <ion-list>
-
-  <ion-checkbox ng-model="filter.red">Red</ion-checkbox>
-  <ion-checkbox ng-model="filter.yellow">Yellow</ion-checkbox>
-  <ion-checkbox ng-model="filter.pink">Pink</ion-checkbox>
-
-</ion-list> -->
