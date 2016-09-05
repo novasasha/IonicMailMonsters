@@ -1,1 +1,29 @@
 /* Empty. Add your own CSS if you like */
+.drop-box {
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.mm-logo {
+  margin: 0 auto;
+  padding-top: 5em;
+  text-align: center;
+}
+.login-page-wrapper {
+  height: 100vh;
+  background: url(../img/meadow.jpg);
+  background-color: #1681FA;
+  /*background-color: #007CFF;  different in simulator*/
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: bottom;
+}
+.login-buttons-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  /*border: 1px solid red;*/
+}
+.blue {
+  color: #1681FA;
+}
