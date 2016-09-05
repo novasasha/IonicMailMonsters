@@ -2,8 +2,21 @@
   <ion-content>
     <ion-list>
       <ion-item ng-repeat="email in emails" href="#/app/emails/{{email.id}}">
-        {{email.sender}}
+        <ion-checkbox ng-model="filter.red" class="checkbox-positive">Red</ion-checkbox>
+        <div class="single-email-preview">
+          <h2>{{email.sender}}</h2>
+          <p>{{email.title}}</p>
+          <p>{{email.body}}</p>
+        </div>
       </ion-item>
     </ion-list>
   </ion-content>
 </ion-view>
+
+<!-- <ion-list>
+
+  <ion-checkbox ng-model="filter.red">Red</ion-checkbox>
+  <ion-checkbox ng-model="filter.yellow">Yellow</ion-checkbox>
+  <ion-checkbox ng-model="filter.pink">Pink</ion-checkbox>
+
+</ion-list> -->
