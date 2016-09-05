@@ -12,7 +12,7 @@
 }
 .login-page-wrapper {
   height: 100vh;
-  background: url(../img/meadow.jpg);
+  background: url(../img/backgrounds/meadow.jpg);
   background-color: #1681FA;
   /*background-color: #007CFF;  different in simulator*/
   background-repeat: repeat-x;
@@ -31,7 +31,7 @@
 /* Character Section */
 .monster-section {
   height: 40vh;
-  background-image: url(../img/sakura.png);
+  background-image: url(../img/backgrounds/morning-park.png);
   width: 100%;
   background-size: cover;
   background-repeat: none;
