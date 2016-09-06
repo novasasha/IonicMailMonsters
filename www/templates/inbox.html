@@ -8,11 +8,13 @@
         </button>
   </ion-nav-buttons>
   <ion-content>
-    <div class="monster-section">
+    <!-- ng-repeat="foo in foos" -->
+    <div ng-include src="'templates/monster.html'"></div>
+    <!-- <div class="monster-section">
       <div class="monster-container">
         <img id="monster" src="../img/monsters/dragon/dragon-flying.gif" />
       </div>
-    </div>
+    </div> -->
     <ion-list>
       <ion-item ng-repeat="email in emails" href="#/app/emails/{{email.id}}">
         <!-- <ion-checkbox ng-model="filter.red" class="checkbox-positive"> -->

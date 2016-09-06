@@ -1,5 +1,14 @@
 <ion-view view-title="Junk">
+  <ion-nav-buttons side="secondary">
+    <button class="icon ion-ios-search" ng-click="doSomething()">
+    </button>
+    <button class="icon ion-ios-arrow-down" ng-click="doSomething()">
+    </button>
+    <button class="icon ion-ios-compose-outline" ng-click="doSomething()">
+    </button>
+  </ion-nav-buttons>
   <ion-content>
+    <div ng-include src="'templates/monster.html'"></div>
     <h1>Junk</h1>
-  </ion-content>
+</ion-content>
 </ion-view>
