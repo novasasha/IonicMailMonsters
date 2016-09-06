@@ -32,12 +32,11 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     controller: 'AppCtrl'
   })
 
-  .state('app.emails', {
-    url: '/emails',
+  .state('app.primary', {
+    url: '/primary',
     views: {
       'menuContent': {
-        templateUrl: 'templates/emails.html',
-        controller: 'EmailsCtrl'
+        templateUrl: 'templates/primary.html'
       }
     }
   })
@@ -78,6 +77,25 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
+  .state('app.important', {
+    url: '/important',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/important.html'
+      }
+    }
+  })
+
+  .state('app.inbox', {
+    url: '/inbox',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/inbox.html',
+        controller: 'EmailsCtrl'
+      }
+    }
+  })
+
   .state('app.junk', {
     url: '/junk',
     views: {
@@ -106,5 +124,5 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/emails');
+  $urlRouterProvider.otherwise('/app/inbox');
 });
