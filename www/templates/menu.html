@@ -14,20 +14,15 @@
   </ion-side-menu-content>
   <ion-side-menu side="left">
     <ion-header-bar class="bar-stable">
-      <button class="button button-outline button-dark icon-left ion-gear-a" ng-click="doSomething()">
-        Settings
-      </button>
-      <button class="button button-outline button-dark icon-left ion-power" ng-click="doSomething()">
-        Logout
-      </button>
+      <!-- Keep Empty -->
     </ion-header-bar>
     <ion-content>
       <ion-list>
-        <ion-item menu-close href="#/app/primary">
-          Primary
+        <ion-item menu-close href="#/app/inbox">
+          Inbox
         </ion-item>
         <ion-item menu-close href="#/app/todo">
-          Todo
+          To Do
         </ion-item>
         <ion-item menu-close href="#/app/starred">
           Starred
@@ -41,9 +36,6 @@
         <ion-item menu-close href="#/app/important">
           Important
         </ion-item>
-        <ion-item menu-close href="#/app/emails">
-          All mail
-        </ion-item>
         <ion-item menu-close href="#/app/junk">
           Junk
         </ion-item>
@@ -52,6 +44,16 @@
         </ion-item>
         <ion-item menu-close ng-click="login()">
           Login (temporary here)
+        </ion-item>
+        <ion-item menu-close ng-click="#">
+          <button class="button button-clear button-dark icon-left ion-gear-a" ng-click="doSomething()">
+            Settings
+          </button>
+        </ion-item>
+        <ion-item menu-close ng-click="#">
+          <button class="button button-clear button-dark icon-left ion-power" ng-click="doSomething()">
+            Logout
+          </button>
         </ion-item>
       </ion-list>
     </ion-content>
