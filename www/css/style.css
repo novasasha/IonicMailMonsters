@@ -31,7 +31,7 @@
 /* Character Section */
 .monster-section {
   height: 40vh;
-  background-image: url(../img/backgrounds/morning-park.png);
+  background-image: url(../img/backgrounds/sakura.png);
   width: 100%;
   background-size: cover;
   background-repeat: none;
@@ -43,6 +43,6 @@
   display: block;
   margin: 0 auto;
   position: fixed;
-  top: 15%;
+  top: 10%;
   left: 35%;
 }
