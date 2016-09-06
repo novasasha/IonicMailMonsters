@@ -32,32 +32,69 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     controller: 'AppCtrl'
   })
 
-  .state('app.search', {
-    url: '/search',
+  .state('app.emails', {
+    url: '/emails',
     views: {
       'menuContent': {
-        templateUrl: 'templates/search.html'
+        templateUrl: 'templates/emails.html',
+        controller: 'EmailsCtrl'
       }
     }
   })
 
-  .state('app.browse', {
-      url: '/browse',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/browse.html'
-        }
+  .state('app.todo', {
+    url: '/todo',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/todo.html'
       }
-    })
-    .state('app.emails', {
-      url: '/emails',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/emails.html',
-          controller: 'EmailsCtrl'
-        }
+    }
+  })
+
+  .state('app.starred', {
+    url: '/starred',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/starred.html'
       }
-    })
+    }
+  })
+
+  .state('app.sent', {
+    url: '/sent',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/sent.html'
+      }
+    }
+  })
+
+  .state('app.drafts', {
+    url: '/drafts',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/drafts.html'
+      }
+    }
+  })
+
+  .state('app.junk', {
+    url: '/junk',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/junk.html'
+      }
+    }
+  })
+
+  .state('app.trash', {
+    url: '/trash',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/trash.html'
+      }
+    }
+  })
 
   .state('app.single', {
     url: '/emails/:emailId',
