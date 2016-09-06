@@ -72,6 +72,9 @@ angular.module('starter.controllers', [])
 
 .controller('EmailCtrl', function($scope, $stateParams) {
   $scope.email = [
-    { sender: 'Naomi David', id: 1,body: "Pour-over organic sriracha microdosing, mustache pop-up fanny pack narwhal blog art party. Kombucha cold-pressed sustainable, chartreuse plaid 3 wolf moon yr man braid sartorial venmo neutra cray biodiesel. Drinking vinegar banh mi keytar, banjo taxidermy plaid listicle tacos aesthetic distillery. Gluten-free semiotics iPhone pickled. VHS synth cornhole food truck polaroid, jean shorts readymade vice master cleanse brooklyn echo park organic. Wolf dreamcatcher tote bag hoodie VHS, occupy food truck cronut semiotics tousled vinyl. Street art cred beard selfies." }
+    { sender: 'Naomi David',
+      id: 1,
+      title: "Hello",
+      body: "Pour-over organic sriracha microdosing, mustache pop-up fanny pack narwhal blog art party. Kombucha cold-pressed sustainable, chartreuse plaid 3 wolf moon yr man braid sartorial venmo neutra cray biodiesel. Drinking vinegar banh mi keytar, banjo taxidermy plaid listicle tacos aesthetic distillery. Gluten-free semiotics iPhone pickled. VHS synth cornhole food truck polaroid, jean shorts readymade vice master cleanse brooklyn echo park organic. Wolf dreamcatcher tote bag hoodie VHS, occupy food truck cronut semiotics tousled vinyl. Street art cred beard selfies." }
   ];
 });

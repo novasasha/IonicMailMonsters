@@ -1,7 +1,31 @@
-<ion-view view-title="Email">
+<ion-view view="Email">
   <ion-content>
-    <h1>Email</h1>
+    <div class="row padding">
+      <h1>Title: {{email[0].title}}</h1>
+    </div>
+    <div class="row padding">
       <p>Sender: {{email[0].sender}}</p>
+    </div>
+    <div class="row padding">
       <p>Body: {{email[0].body}}</p>
+    </div>
+    <div class="button-bar padding">
+      <button class="button button-positive icon-left ion-reply">
+        Reply
+      </button>
+      <button class="button button-positive icon-left ion-trash-b">
+        Delete
+      </button>
+      <button class="button button-positive icon-right ion-arrow-right-a">
+        Forward
+      </button>
+    </div>
   </ion-content>
 </ion-view>
+
+<!--
+  <div class="col col-top col-80 col-offset-10 drop-box">
+    <button class="button button-block button-light icon-left ion-social-google">
+      Login with Gmail
+    </button>
+</div> -->
