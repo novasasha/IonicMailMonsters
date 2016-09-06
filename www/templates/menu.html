@@ -18,8 +18,8 @@
     </ion-header-bar>
     <ion-content>
       <ion-list>
-        <ion-item menu-close href="#/app/drafts">
-          To Do
+        <ion-item menu-close href="#/app/todo">
+          Todo
         </ion-item>
         <ion-item menu-close href="#/app/emails">
           Emails
@@ -33,12 +33,15 @@
         <ion-item menu-close href="#/app/drafts">
           Drafts
         </ion-item>
-        <ion-item menu-close href="#/app/drafts">
+        <ion-item menu-close href="#/app/junk">
           Junk
         </ion-item>
-        <ion-item menu-close href="#/app/drafts">
+        <ion-item menu-close href="#/app/trash">
           Trash
         </ion-item>
+        <ion-item menu-close ng-click="login()">
+         Login
+       </ion-item>
       </ion-list>
     </ion-content>
   </ion-side-menu>
