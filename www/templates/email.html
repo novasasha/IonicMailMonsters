@@ -1,10 +1,18 @@
 <ion-view view="Email">
   <ion-content>
+    <div class="row">
+        <button class="button button-clear button-positive icon-left ion-plus-circled">
+          To Do
+        </button>
+        <button class="button button-clear button-positive icon-left ion-star">
+          Important
+        </button>
+    </div>
     <div class="row padding">
       <h1>Title: {{email[0].title}}</h1>
     </div>
     <div class="row padding">
-      <p>Sender: {{email[0].sender}}</p>
+      <h4>Sender: {{email[0].sender}}</h4>
     </div>
     <div class="row padding">
       <p>Body: {{email[0].body}}</p>
@@ -22,10 +30,3 @@
     </div>
   </ion-content>
 </ion-view>
-
-<!--
-  <div class="col col-top col-80 col-offset-10 drop-box">
-    <button class="button button-block button-light icon-left ion-social-google">
-      Login with Gmail
-    </button>
-</div> -->

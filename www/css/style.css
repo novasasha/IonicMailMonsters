@@ -1,4 +1,7 @@
 /* Empty. Add your own CSS if you like */
+.find-me {
+  border: 1px solid red;
+}
 .drop-box {
   padding-top: 0;
   margin-top: 0;
@@ -22,10 +25,9 @@
 .login-buttons-wrapper {
   max-width: 600px;
   margin: 0 auto;
-  /*border: 1px solid red;*/
 }
-.blue {
-  color: #1681FA;
+.email-top-buttons-wrapper {
+  margin-left: 1em;
 }
 
 /* Character Section */
